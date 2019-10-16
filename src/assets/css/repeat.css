@@ -1,0 +1,7 @@
+.el-loading-spinner i{
+    color: #D57F34 !important;
+    font-size: 40px !important;
+}
+.el-loading-spinner .el-loading-text{
+    color: #D57F34 !important;
+}

@@ -1,6 +1,10 @@
 <template>
-	<div class="loading">
-		<img src="../../assets/loading.gif" alt="">
+	<div class="loading"
+         v-loading="true"
+         element-loading-text="拼命加载中"
+         element-loading-spinner="el-icon-loading"
+         element-loading-background="rgba(0, 0, 0, 0.8)">
+		<!--<img src="../../assets/loading.gif" alt="">-->
 	</div>
 </template>
 
@@ -18,11 +22,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .loading {
-	position: relative;
+	position: fixed;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
+    z-index: 9999;
 }
 .loading img {
 	position: absolute;
